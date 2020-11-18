@@ -12,6 +12,23 @@ function incrementversion() {
     };
   });
 }
+
+function sortProjects() {
+  return updateJsonInTree('workspace.json', (json) => ({
+    ...json,
+    projects: sortObjectKeys(json.projects),
+  }));
+}
+
+function sortObjectKeys(obj: any) {
+  const sorted = {};
+  Object.keys(obj)
+    .sort()
+    .forEach((key) => {
+      sorted[key] = obj[key];
+    });
+  return sorted;
+}
 export default function (schema: any): Rule {
-  return chain([incrementversion()]);
+  return chain([incrementversion(), sortProjects()]);
 }
