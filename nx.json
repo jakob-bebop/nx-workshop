@@ -16,9 +16,7 @@
     },
     "store-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "store"
-      ]
+      "implicitDependencies": ["store"]
     },
     "store-ui-shared": {
       "tags": ["scope:store", "type:ui"]
@@ -30,16 +28,17 @@
       "tags": ["scope:store", "type:feature"]
     },
     "api": {
-      "tags": ["scope:api", "type:app"]
+      "tags": ["scope:api"]
     },
     "util-interface": {
       "tags": ["scope:shared", "type:util"]
     },
     "store-ui-shared-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "store-ui-shared"
-      ]
+      "implicitDependencies": ["store-ui-shared"]
+    },
+    "api-util-notifications": {
+      "tags": ["scope:api", "type:util"]
     }
   },
   "tasksRunnerOptions": {
