@@ -1,5 +1,5 @@
 import { chain, externalSchematic, Rule } from '@angular-devkit/schematics';
-import { updateJsonInTree } from '@nrwl/workspace';
+import { updateJsonInTree, formatFiles } from '@nrwl/workspace';
 
 function incrementversion() {
   return updateJsonInTree('package.json', (json) => {
@@ -30,5 +30,5 @@ function sortObjectKeys(obj: any) {
   return sorted;
 }
 export default function (schema: any): Rule {
-  return chain([incrementversion(), sortProjects()]);
+  return chain([incrementversion(), sortProjects(), formatFiles()]);
 }
