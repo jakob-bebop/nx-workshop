@@ -12,46 +12,72 @@
   },
   "projects": {
     "store": {
-      "tags": ["scope:store", "type:app"]
+      "tags": [
+        "scope:store",
+        "type:app"
+      ]
     },
     "store-e2e": {
       "tags": [],
-      "implicitDependencies": ["store"]
+      "implicitDependencies": [
+        "store"
+      ]
     },
     "store-ui-shared": {
-      "tags": ["scope:store", "type:ui"]
+      "tags": [
+        "scope:store",
+        "type:ui"
+      ]
     },
     "store-util-formatters": {
-      "tags": ["scope:store", "type:util"]
+      "tags": [
+        "scope:store",
+        "type:util"
+      ]
     },
     "store-feature-game-detail": {
-      "tags": ["scope:store", "type:feature"]
+      "tags": [
+        "scope:store",
+        "type:feature"
+      ]
     },
     "api": {
-      "tags": ["scope:api"]
+      "tags": [
+        "scope:api"
+      ]
     },
     "util-interface": {
-      "tags": ["scope:shared", "type:util"]
+      "tags": [
+        "scope:shared",
+        "type:util"
+      ]
     },
     "store-ui-shared-e2e": {
       "tags": [],
-      "implicitDependencies": ["store-ui-shared"]
+      "implicitDependencies": [
+        "store-ui-shared"
+      ]
     },
     "api-util-notifications": {
-      "tags": ["scope:api", "type:util"]
+      "tags": [
+        "scope:api",
+        "type:util"
+      ]
     }
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
+        "accessToken": "ZTdhOTg5OWUtMjQ5NS00OGRmLWE0ZWMtYzI0ZTljODFiYzRkfHJlYWQtd3JpdGU=",
         "cacheableOperations": [
           "build",
-          "lint",
           "test",
-          "e2e",
-          "build-storybook"
-        ]
+          "lint",
+          "e2e"
+        ],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
