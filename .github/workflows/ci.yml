@@ -17,7 +17,7 @@ jobs:
       - run: |
           echo "variables $NX_BRANCH - $NX_RUN_GROUP"
           git branch
-      - uses: bahmutov/npm-install@v1.4.5
-      - run: npm run nx affected:lint
+      # - uses: bahmutov/npm-install@v1.4.5
+      # - run: npm run nx affected:lint
       # - run: npm run nx affected:test
       # - run: npm run nx affected:e2e
