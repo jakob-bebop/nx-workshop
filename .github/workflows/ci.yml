@@ -12,7 +12,7 @@ jobs:
     name: Testing affected apps
     steps:
       - run: |
-        echo "variables $NX_BRANCH - $NX_RUN_GROUP"
+          echo "variables $NX_BRANCH - $NX_RUN_GROUP"
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1.4.5
       - run: npm run nx affected:lint
