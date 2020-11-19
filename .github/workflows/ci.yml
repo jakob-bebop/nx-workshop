@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Testing affected apps
     steps:
+      - uses: actions/checkout@v1
       - run: |
           echo "variables $NX_BRANCH - $NX_RUN_GROUP"
-      - uses: actions/checkout@v1
+          git branch
       - uses: bahmutov/npm-install@v1.4.5
       - run: npm run nx affected:lint
       # - run: npm run nx affected:test
