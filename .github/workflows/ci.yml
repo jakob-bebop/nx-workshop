@@ -12,6 +12,8 @@ jobs:
     name: Testing affected apps
     steps:
       - uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
       - run: |
           echo "variables $NX_BRANCH - $NX_RUN_GROUP"
           git branch
