@@ -1,2 +1,9 @@
 ENTERPRISEWORKSHOP2020 
 
+[jakob@goldilocks nx-workshop]$ heroku authorizations:create
+Creating OAuth Authorization... done
+Client:      <none>
+ID:          fe0ffef2-abd3-4ced-9bab-62386e545d13
+Description: Long-lived user authorization
+Scope:       global
+Token:       82292ec6-1a68-4080-8ea8-6cd4306b876f
