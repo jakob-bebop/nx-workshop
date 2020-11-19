@@ -16,7 +16,7 @@ export class AppComponent {
     console.log('cx again?');
   }
 
-  title = 'Board Game Hoard';
+  title = 'Over intense Board Game Hoard';
   formatRating = formatRating;
   games = this.http.get<Game[]>(this.baseUrl + '/api/games');
 }
